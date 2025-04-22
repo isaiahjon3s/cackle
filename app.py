@@ -10,5 +10,9 @@ def index():
 def cackle():
     return render_template('cackle.html')
 
+@app.route('/cackled')
+def cackled():
+    return render_template('cackled.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
