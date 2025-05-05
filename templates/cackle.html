@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-<h1>
-    CACKLE
-</h1>
-<button onclick="location.href='{{ url_for('cackled') }}'">
-    Cackle
-</button>
+    <div class="container">
+        <h1>Cackle</h1>
+        <p>Ready to cackle? Click the button below!</p>
+        <button class="cackle_button" onclick="location.href='{{ url_for('cackled') }}'">
+            Cackle Now
+        </button>
+    </div>
 </body>
 </html>
