@@ -5,19 +5,20 @@
     <head>
         <title>Cackle</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <style>
+            body {
+                margin: 0;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(135deg, #E0E7FF 0%, #C7D2FE 50%, #A5B4FC 100%);
+            }
+        </style>
     </head>
     <body>
-        <div class="container">
-            <h1>Cackle</h1>
-            <p>
-                Cackle is a simple web application that allows users to create and manage their own cackle.
-            </p>
-            <p>
-                This is a simple web application that allows users to create and manage their own cackle.
-            </p>
-            <button class="cackle_button" onclick="location.href='{{ url_for('cackle') }}'">
-                Start Cackling
-            </button>
-        </div>
+        <button class="cackle_button" onclick="location.href='{{ url_for('cackle') }}'">
+            Cackle
+        </button>
     </body>
 </html>
